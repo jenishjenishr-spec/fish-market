@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Board — Kadal Kani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700&family=Work+Sans:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 17c5-8 12-11 20-9 4 1 8 4 10 9-2 5-6 8-10 9-8 2-15-1-20-9Z" stroke="#F3EAD8" stroke-width="2"/>
+        <circle cx="24" cy="14" r="1.6" fill="#F3EAD8"/>
+      </svg>
+      <span>Kadal Kani</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">← Back to site</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap admin-wrap">
+
+  <p class="eyebrow eyebrow-dark">Staff Only</p>
+  <h1>Update Today's Catch</h1>
+  <p class="section-note">Add what came in this morning, set the price, and publish — it appears on the site immediately in this browser.</p>
+
+  <form id="add-form" class="admin-form">
+    <div class="field">
+      <label for="f-name">Fish name</label>
+      <input id="f-name" type="text" placeholder="e.g. Vanjaram" required>
+    </div>
+    <div class="field">
+      <label for="f-sub">Local / common name</label>
+      <input id="f-sub" type="text" placeholder="e.g. Seer Fish">
+    </div>
+    <div class="field field-small">
+      <label for="f-price">Price (₹/kg)</label>
+      <input id="f-price" type="number" min="0" step="1" placeholder="500" required>
+    </div>
+    <div class="field field-small">
+      <label for="f-tag">Tag</label>
+      <select id="f-tag">
+        <option>Fresh</option>
+        <option>Best Seller</option>
+        <option>Limited</option>
+        <option>Everyday</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Add to board</button>
+  </form>
+
+  <div id="form-msg" class="form-msg" role="status"></div>
+
+  <h2 class="admin-subhead">Current Board</h2>
+  <div class="admin-table-wrap">
+    <table class="admin-table" id="admin-table">
+      <thead>
+        <tr><th>Fish</th><th>Local Name</th><th>Price / kg</th><th>Tag</th><th></th></tr>
+      </thead>
+      <tbody id="admin-table-body"></tbody>
+    </table>
+  </div>
+
+  <div class="admin-actions">
+    <a href="index.html" class="btn btn-secondary">View live site</a>
+    <button id="reset-btn" class="btn btn-ghost" type="button">Reset to default catch</button>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Kadal Kani Fish Market</span>
+    <span class="footer-note">Staff board — changes are saved in this browser only.</span>
+  </div>
+</footer>
+
+<script src="js/store.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

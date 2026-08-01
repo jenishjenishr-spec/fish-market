@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kadal Kani — Fresh Catch Fish Market</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 17c5-8 12-11 20-9 4 1 8 4 10 9-2 5-6 8-10 9-8 2-15-1-20-9Z" stroke="#F3EAD8" stroke-width="2"/>
+        <circle cx="24" cy="14" r="1.6" fill="#F3EAD8"/>
+        <path d="M2 17 L-3 12 M2 17 L-3 22" stroke="#F3EAD8" stroke-width="2" transform="translate(4 0)"/>
+      </svg>
+      <span>Kadal Kani</span>
+    </a>
+    <nav class="nav">
+      <a href="#catch">Today's Catch</a>
+      <a href="#how">How It Works</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Kasimedu Shore · Auction closes 7 AM</p>
+      <h1>Netted at dawn.<br>On ice by six.<br><em>Sold before noon.</em></h1>
+      <p class="hero-sub">No middlemen, no cold storage weeks. What the boats bring in today is what's on the board today — nothing held back for tomorrow.</p>
+      <div class="hero-cta">
+        <a href="#catch" class="btn btn-primary">See Today's Board</a>
+        <span class="hero-date" id="today-date">—</span>
+      </div>
+    </div>
+    <svg class="wave-divider" viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,30 C960,60 1200,10 1440,45 L1440,90 L0,90 Z"></path></svg>
+  </section>
+
+  <section class="catch" id="catch">
+    <div class="wrap">
+      <p class="eyebrow eyebrow-dark">Rate Board</p>
+      <h2>Today's Catch</h2>
+      <p class="section-note">Prices chalked fresh every morning after the shore auction. Per kilogram, cleaning included.</p>
+
+      <div class="board" id="catch-board">
+        <!-- filled by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap">
+      <p class="eyebrow eyebrow-dark">From Shore to Home</p>
+      <h2>How the market works</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-time">4:30 AM</span>
+          <h3>Boats come in</h3>
+          <p>Catamarans and trawlers return with the night's catch, straight from the Bay of Bengal.</p>
+        </li>
+        <li>
+          <span class="step-time">5:15 AM</span>
+          <h3>Shore auction</h3>
+          <p>Fish is sorted and auctioned in lots on the beach — the price you see is the price we paid.</p>
+        </li>
+        <li>
+          <span class="step-time">6:00 AM</span>
+          <h3>Cleaned & iced</h3>
+          <p>Scaled, gutted, and packed in ice within the hour. No chemicals, no holding tanks.</p>
+        </li>
+        <li>
+          <span class="step-time">Before noon</span>
+          <h3>On your table</h3>
+          <p>Pick up at the counter or have it delivered across the city the same morning.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit-inner">
+      <div class="visit-card">
+        <p class="eyebrow">Find Us</p>
+        <h2>Kasimedu Fishing Harbour Road,<br>Chennai 600013</h2>
+        <dl class="hours">
+          <div><dt>Market open</dt><dd>5:30 AM – 1:00 PM, all days</dd></div>
+          <div><dt>Best selection</dt><dd>Before 8 AM</dd></div>
+          <div><dt>Call ahead</dt><dd>+91 98765 43210</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Kadal Kani Fish Market</span>
+    <span class="footer-note">Straight from the boat. Nothing else added.</span>
+    <a href="admin.html" class="footer-admin">Market Staff</a>
+  </div>
+</footer>
+
+<script src="js/store.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
