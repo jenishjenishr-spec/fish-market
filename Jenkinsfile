@@ -1,8 +1,8 @@
-pipeline {
+ipipeline {
     agent any
 
     environment {
-        DOCKERHUB_USER = 'your-dockerhub-username'     // <-- change this
+        DOCKERHUB_USER = 'rkjenish'     // <-- change this
         IMAGE_NAME     = "${DOCKERHUB_USER}/fish-market"
         EC2_HOST       = 'ubuntu@your-ec2-public-ip'    // <-- change this
     }
